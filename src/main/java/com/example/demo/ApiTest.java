@@ -11,6 +11,7 @@ public class ApiTest {
 
     @PostMapping("/postbody")
     public String postBody(@RequestBody String fullName) {
+        System.out.println("Receive post body -> " + fullName);
         return "Hello " + fullName;
     }
 }
