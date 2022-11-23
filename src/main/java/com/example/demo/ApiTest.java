@@ -13,5 +13,6 @@ public class ApiTest {
     public String postBody(@RequestBody String fullName) {
         System.out.println("Receive post body -> " + fullName);
         return "Hello " + fullName;
+        
     }
 }
